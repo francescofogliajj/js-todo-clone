@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css" integrity="sha512-f73UKwzP1Oia45eqHpHwzJtFLpvULbhVpEJfaWczo/ZCV5NWSnK4vLDnjTaMps28ocZ05RbI83k2RlQH92zy7A==" crossorigin="anonymous" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.js" integrity="sha512-MQkEjxbZvzs4TX8ES4/tTIyaYdtDlJzVocnPo0GoysTR0jCmNg0P2is7uqpCoWxmoS9X84CDVzuWgZD/R/Q2oQ==" crossorigin="anonymous"></script>
+
+    <script src="js/script.js" charset="utf-8"></script>
+
+    <title>to-do list</title>
+  </head>
+  <body>
+
+    <input type="text" name="add-activity" value="" placeholder="Inserisci qualcosa da fare">
+
+    <ul id="to-do">
+
+    </ul>
+
+    <script id="entry-template" type="text/x-handlebars-template">
+      <li>
+        {{text}} <i class="fas fa-check-circle"></i>
+      </li>
+    </script>
+
+  </body>
+</html>
