@@ -3,7 +3,14 @@
   <head>
     <meta charset="utf-8">
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css" integrity="sha512-f73UKwzP1Oia45eqHpHwzJtFLpvULbhVpEJfaWczo/ZCV5NWSnK4vLDnjTaMps28ocZ05RbI83k2RlQH92zy7A==" crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -11,21 +18,26 @@
 
     <script src="js/script.js" charset="utf-8"></script>
 
-    <title>to-do list</title>
+    <title>To Do List</title>
   </head>
   <body>
 
-    <input type="text" name="add-activity" value="" placeholder="Inserisci qualcosa da fare">
+    <div class="wrapper">
 
-    <ul id="to-do">
+      <h1>To Do List</h1>
 
-    </ul>
+      <input type="text" name="add-activity" value="" placeholder="Inserisci qualcosa da fare">
 
-    <script id="entry-template" type="text/x-handlebars-template">
-      <li>
-        {{text}} <i class="fas fa-check-circle"></i>
-      </li>
-    </script>
+      <ul id="to-do">
+      </ul>
+
+      <script id="entry-template" type="text/x-handlebars-template">
+        <li>
+          {{text}} <i class="fas fa-check-circle"></i>
+        </li>
+      </script>
+
+    </div>
 
   </body>
 </html>

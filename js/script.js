@@ -36,6 +36,9 @@ $(document).ready(function () {
       };
       var html = template(context);
       $("#to-do").append(html);
+
+      $("input").val("");
+      
     }
   });
 
